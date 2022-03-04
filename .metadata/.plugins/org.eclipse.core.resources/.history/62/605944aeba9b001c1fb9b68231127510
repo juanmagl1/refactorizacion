@@ -1,0 +1,15 @@
+package com.test.refactoring.Business;
+/**
+ * 
+ * @author juanma
+ * @version 1.0
+ * Con esta clase lo que hacemos es los métodos que están en común los extraemos en una
+ * interfaz y en las clases de los vehiculos los implementamos
+ */
+public interface FuncionCoche {
+
+	void acelerar(Integer velocidad);
+
+	void detener();
+
+}

@@ -1,0 +1,91 @@
+package com.test.refactoring.Business;
+/**
+ * @version 1.0
+ * @author juanma
+ * Creamos la clase vehiculo con los siguientes atributos
+ */
+
+public class Vehiculo {
+	protected String matricula;
+	protected String color;
+	protected String combustible;
+	protected String nombreConductor;
+	protected String dniConductor;
+/**
+ * Creamos los constructores, uno a vacío
+ */
+	public Vehiculo() {
+		super();
+	}
+/**
+ * Este constructor tiene como parametros los atributos que tiene la clase
+ * @param matricula le pasamos la matricula que va a tener el vehiculo
+ * @param color el color que será nuestro vehiculo
+ * @param combustible el tipo de combustible que tendrá nuestro vehiculo
+ * @param nombreConductor una cadena con el nombre
+ * @param dniConductor una cadena con el dni del dueño del vehiculo
+ */
+	public Vehiculo(String matricula, String color, String combustible, String nombreConductor, String dniConductor) {
+		super();
+		this.matricula = matricula;
+		this.color = color;
+		this.combustible = combustible;
+		this.nombreConductor = nombreConductor;
+		this.dniConductor = dniConductor;
+	}
+	/**
+	 * 
+	 * @return Este método devuelve el nombre del conductor
+	 */
+
+	public String getNombreConductor() {
+		return nombreConductor;
+	}
+/**
+ * Con este método le pasamos por parámetro el nombre del conductor y se le modifica el
+ * nombre antiguo por el que le hemos pasado por parametro
+ * @param nombreConductor
+ */
+	public void setNombreConductor(String nombreConductor) {
+		this.nombreConductor = nombreConductor;
+	}
+
+	public String getDniConductor() {
+		return dniConductor;
+	}
+
+	public void setDniConductor(String dniConductor) {
+		this.dniConductor = dniConductor;
+	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getCombustible() {
+		return combustible;
+	}
+
+	public void setCombustible(String combustible) {
+		this.combustible = combustible;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehiculo [matricula=" + matricula + ", color=" + color + ", combustible=" + combustible
+				+ ", nombreConductor=" + nombreConductor + ", dniConductor=" + dniConductor + "]";
+	}
+
+}

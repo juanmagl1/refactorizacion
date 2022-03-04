@@ -1,0 +1,9 @@
+package com.test.refactoring.Business;
+
+public interface FuncionCoche {
+
+	void acelerar(Integer velocidad);
+
+	void detener();
+
+}

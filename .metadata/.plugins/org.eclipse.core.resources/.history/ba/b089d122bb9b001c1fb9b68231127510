@@ -1,0 +1,74 @@
+package com.test.refactoring.Business;
+/**
+ * @version 1.0
+ * @author juanma
+ * Creamos la clase vehiculo con los siguientes atributos
+ */
+
+public class Vehiculo {
+	protected String matricula;
+	protected String color;
+	protected String combustible;
+	protected String nombreConductor;
+	protected String dniConductor;
+
+	public Vehiculo() {
+		super();
+	}
+
+	public Vehiculo(String matricula, String color, String combustible, String nombreConductor, String dniConductor) {
+		super();
+		this.matricula = matricula;
+		this.color = color;
+		this.combustible = combustible;
+		this.nombreConductor = nombreConductor;
+		this.dniConductor = dniConductor;
+	}
+
+	public String getNombreConductor() {
+		return nombreConductor;
+	}
+
+	public void setNombreConductor(String nombreConductor) {
+		this.nombreConductor = nombreConductor;
+	}
+
+	public String getDniConductor() {
+		return dniConductor;
+	}
+
+	public void setDniConductor(String dniConductor) {
+		this.dniConductor = dniConductor;
+	}
+
+	public String getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getCombustible() {
+		return combustible;
+	}
+
+	public void setCombustible(String combustible) {
+		this.combustible = combustible;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehiculo [matricula=" + matricula + ", color=" + color + ", combustible=" + combustible
+				+ ", nombreConductor=" + nombreConductor + ", dniConductor=" + dniConductor + "]";
+	}
+
+}

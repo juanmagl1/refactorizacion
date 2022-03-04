@@ -1,0 +1,5 @@
+package com.test.refactoring.Business;
+
+public class Vehiculo {
+
+}

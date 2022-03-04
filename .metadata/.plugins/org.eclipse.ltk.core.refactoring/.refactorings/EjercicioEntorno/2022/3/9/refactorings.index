@@ -1,0 +1,5 @@
+1646394695095	Rename local variable 'sc'
+1646394989526	Rename type 'motocicleta'
+1646395810675	Rename field 'nombre_conductor'
+1646395826826	Rename local variable 'nombreonductor'
+1646395976591	Extract interface 'FuncionCoche'
